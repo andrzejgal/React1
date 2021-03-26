@@ -1,20 +1,31 @@
-import { ReactComponent } from "*.svg";
+import React from 'react';
 
-const myList = ['ziemniaki', 'chleb', 'mleko', 'ser', 'kiełbasa'];
-const Test = () => {
-    return (
-        <ul>
-        {myList.map(item => {
-          return <li key={item}>{item}</li>;
-        })}
-      </ul>
-    
-    );
-}
+// const Test = (props) => {
+//     return (
+//         <ul>
+//         {props.myList.map(item => {
+//           return <li key={item}>{item}</li>;
+//         })}
+//       </ul>
 
-// class Test extends ReactComponent {
-
+//     );
 // }
+
+class Test extends React.Component {
+    constructor(props) {
+        super(props);
+        this.myList = props.myList;
+    }
+    render() {
+        return (
+            <ul>
+                {this.myList.map(item => {
+                    return <li key={item}>{item}</li>;
+                })}
+            </ul>
+        )
+    }
+}
 
 export default Test
 
