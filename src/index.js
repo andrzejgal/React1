@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Test from './components/test-component/test.js';
+const myList = ['ziemniaki', 'chleb', 'mleko', 'ser', 'kiełbasa'];
 
 ReactDOM.render(
   <React.StrictMode>
-    <Test />
+    <Test myList={myList}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
