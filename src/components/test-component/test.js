@@ -1,3 +1,5 @@
+import { ReactComponent } from "*.svg";
+
 const myList = ['ziemniaki', 'chleb', 'mleko', 'ser', 'kiełbasa'];
 const Test = () => {
     return (
@@ -9,6 +11,10 @@ const Test = () => {
     
     );
 }
+
+// class Test extends ReactComponent {
+
+// }
 
 export default Test
 
